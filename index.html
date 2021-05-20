@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+</head>
+<body>
+    <!--nightride web RADIO with player-->
+
+    <audio id="kit" src="https://stream.nightride.fm/nightride.m4a" type="audio/x-m4a" ></audio>
+
+    <audio id="caprice" src="https://ia800909.us.archive.org/21/items/PaganiniCapriceNo.24perlman/03Paganini_CapricesOp.1-24InAMinor.mp3" type="audio/mp3" loop></audio>
+
+    <div class="player" id="kit-player">
+        <p>Nightride Radio : now playing live </p>
+        <button onclick="document.getElementById('kit').play()">Play</button> 
+        <button onclick="document.getElementById('kit').pause()">Pause</button> 
+        <button onclick="document.getElementById('kit').volume += 0.1">Vol +</button> 
+        <button onclick="document.getElementById('kit').volume -= 0.1">Vol -</button>
+    </div>
+
+    <div class="player" id="caprice-player"> 
+        <p>Paganini : Caprice</p>
+        <button onclick="document.getElementById('caprice').play()">Play</button> 
+        <button onclick="document.getElementById('caprice').pause()">Pause</button> 
+        <button onclick="document.getElementById('caprice').volume += 0.1">Vol +</button> 
+        <button onclick="document.getElementById('caprice').volume -= 0.1">Vol -</button>
+    </div>
+
+</body>
+
+<script> //web-radio autoplay settings
+    var rad = document.getElementById("kit");
+    function enableAutoplay() { 
+    rad.autoplay = true;
+    rad.load();
+    }
+    enableAutoplay();
+</script>
+
+</html>
+

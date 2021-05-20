@@ -1,0 +1,9 @@
+.player {
+    border: 3px solid black;
+    background-color: beige;
+
+    width: 25%;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
