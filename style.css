@@ -7,3 +7,55 @@
     margin: 1rem;
     padding: 1rem;
 }
+
+.play-pause {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.active svg path {
+    fill: #df1469;
+}
+
+/*simpler play button*/
+.simple-button {
+    border: 0;
+    background: transparent;
+    box-sizing: border-box;
+    width: 0;
+    height: 74px;
+    border-color: transparent transparent transparent #202020;
+    transition: 100ms all ease;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 37px 0 37px 60px;
+}
+.simple-button.paused {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+}
+.simple-button:hover {
+    border-color: transparent transparent transparent #404040;
+}
+
+/*svg play button*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100);
+
+.ytp-button {
+   outline: none;
+   border: 0px solid;
+   background: none;
+}
+
+.ytp-play-button {
+   fill: rgb(29, 26, 26);
+   opacity: 0.85;
+}
+
+.ytp-play-button:hover {
+   cursor: pointer;
+   opacity: 1;
+}
