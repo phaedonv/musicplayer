@@ -138,15 +138,18 @@ function togglePlay() {
   });
 
   /*another one play btn*/
+  const kit = document.getElementById("kit");
+  const box = document.querySelector('.box');
+  
   function togglePlay() {
-    var kit = document.getElementById("kit");
     return kit.paused ? kit.play() : kit.pause();
   };
-  
-  const box = document.querySelector('.box');
   
   box.addEventListener('click', (e)=>{
     e.target.classList.toggle('pause');
     togglePlay();
   })
-  
+
+  kit.onplaying = function() {
+      box.classList.add('pause');
+  };

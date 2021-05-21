@@ -65,19 +65,21 @@
 
      <!--another one play btn-->
      <div class="container" id="cont">
-        <div class="box center" id="btn"></div>
-      <!--   <div class="box pause"></div> -->
+        <div class="box center play" id="btn"></div>
+        <!--<div class="box pause"></div>--> 
       </div>
 
 </body>
 
 <script> //web-radio autoplay settings
     var rad = document.getElementById("kit");
+
     function enableAutoplay() { 
-    rad.autoplay = false;
+    rad.autoplay = true;
     rad.load();
     }
     enableAutoplay();
+    
 </script>
 
 </html>
