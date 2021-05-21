@@ -153,3 +153,16 @@ function togglePlay() {
   kit.onplaying = function() {
       box.classList.add('pause');
   };
+
+  /*pretty play button*/
+  (function($) {
+  
+    'use strict';
+    
+     $('.c-pp').on('click', function() {
+       $(this).toggleClass('is-play');
+     });
+    
+  })(jQuery);
+
+  /*test*/

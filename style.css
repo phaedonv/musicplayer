@@ -60,7 +60,7 @@
    opacity: 1;
 }
 
-/*another one play btn*/
+/*another one play btn ----------------------------with pretty css-----------------------------find old css at https://codepen.io/phaedonv/pen/WNpRarV------------------------------*/
 .center{
 	position: absolute;
 	top: 50%;
@@ -68,17 +68,73 @@
 	transform: translate(-50%, -50%);
 }
 
+#cont {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 3.3333333333px solid rgb(158, 224, 4);
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    user-select: none;
+}
+
 .box, .play{
-  width: 74px;
-  height: 74px;
-  box-sizing: border-box;
-  border-style: solid;
-  border-width: 37px 0px 37px 74px;
-  border-color: transparent transparent transparent steelblue;
-  transition: all 100ms ease-in-out;
+    transform: translate(-5.538462px, -24px);
+    border-top: 25px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid rgb(201, 46, 111);
 }
 
 .pause{
-  border-style: double;
-  border-width:0px 0px 0px 60px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    transition: all 0.2s ease;
+    width: 25px;
+    height: 50px;
+    transform: translateX(-11.538462px);
+    top: 25px;
+    border-top: 0 solid transparent;
+    border-right: 8.3333333333px solid rgb(158, 224, 4);
+    border-bottom: 0 solid transparent;
+    border-left: 8.3333333333px solid rgb(158, 224, 4);
 }
+
+/*pretty play button*/
+.c-pp {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 3.3333333333px solid rgb(158, 224, 4);
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 auto;
+    cursor: pointer;
+    user-select: none;
+  }
+  .c-pp__icon {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    transition: all 0.2s ease;
+    width: 25px;
+    height: 50px;
+    transform: translateX(38.4615384615px);
+    top: 25px;
+    border-top: 0 solid transparent;
+    border-right: 8.3333333333px solid rgb(158, 224, 4);
+    border-bottom: 0 solid transparent;
+    border-left: 8.3333333333px solid rgb(158, 224, 4);
+  }
+  .c-pp.is-play .c-pp__icon {
+    transform: translateX(43.4782608696px);
+    border-top: 25px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid rgb(22, 224, 4);
+  }
