@@ -136,3 +136,17 @@ function togglePlay() {
         "to": flip ? play : pause
      }).get(0).beginElement();
   });
+
+  /*another one play btn*/
+  function togglePlay() {
+    var kit = document.getElementById("kit");
+    return kit.paused ? kit.play() : kit.pause();
+  };
+  
+  const box = document.querySelector('.box');
+  
+  box.addEventListener('click', (e)=>{
+    e.target.classList.toggle('pause');
+    togglePlay();
+  })
+  
